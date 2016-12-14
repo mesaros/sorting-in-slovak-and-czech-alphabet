@@ -28,7 +28,7 @@ A simple utility to **properly sort the data** by SK and CZ alphabet.
 
 **Example no. 2** allows you to sort the list of films (ascending/descending).
 
-**Example no. 3** allows you to sort the list of persons in the table by clicking on the header of a particular item. Sorting records is used together *with jQuery library*.
+**Example no. 3** allows you to sort the list of persons in the table by clicking on the header of a particular item. Sorting records is used together **with jQuery library**.
 
 In file **sort_sk_cz.js** is JavaScript sorting algorithm. This file can be used in applications dealing with sorting of texts in **different national languages**.
 
