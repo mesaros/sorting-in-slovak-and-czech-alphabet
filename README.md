@@ -12,7 +12,9 @@ A simple utility to **properly sort the data** by SK and CZ alphabet.
 
 <img src="https://raw.githubusercontent.com/mesaros/sorting-in-slovak-and-czech-alphabet/master/screenshots/sorting-in-slovak-and-czech-alphabet-01.png" width="448px" />
 
-<img src="https://raw.githubusercontent.com/mesaros/sorting-in-slovak-and-czech-alphabet/master/screenshots/sorting-in-slovak-and-czech-alphabet-02.png" width="338px" />
+<img src="https://raw.githubusercontent.com/mesaros/sorting-in-slovak-and-czech-alphabet/master/screenshots/sorting-in-slovak-and-czech-alphabet-02.png" width="368px" />
+
+<img src="https://raw.githubusercontent.com/mesaros/sorting-in-slovak-and-czech-alphabet/master/screenshots/sorting-in-slovak-and-czech-alphabet-03.png" width="338px" />
 
 
 ### Properties
@@ -26,7 +28,7 @@ A simple utility to **properly sort the data** by SK and CZ alphabet.
 
 **Example no. 1** is a simple example of sorting different letters.
 
-**Example no. 2** allows you to sort the list of films (ascending/descending).
+**Example no. 2** allows you to sort the list of films *(ascending/descending)*.
 
 **Example no. 3** allows you to sort the list of persons in the table by clicking on the header of a particular item. Sorting records is used together **with jQuery library**.
 

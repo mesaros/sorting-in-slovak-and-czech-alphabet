@@ -12,7 +12,9 @@ Jednoduchá utilita na **správne triedenie dát** podľa SK a CZ abecedy.
 
 <img src="https://raw.githubusercontent.com/mesaros/sorting-in-slovak-and-czech-alphabet/master/screenshots/sorting-in-slovak-and-czech-alphabet-01.png" width="448px" />
 
-<img src="https://raw.githubusercontent.com/mesaros/sorting-in-slovak-and-czech-alphabet/master/screenshots/sorting-in-slovak-and-czech-alphabet-02.png" width="338px" />
+<img src="https://raw.githubusercontent.com/mesaros/sorting-in-slovak-and-czech-alphabet/master/screenshots/sorting-in-slovak-and-czech-alphabet-02.png" width="368px" />
+
+<img src="https://raw.githubusercontent.com/mesaros/sorting-in-slovak-and-czech-alphabet/master/screenshots/sorting-in-slovak-and-czech-alphabet-03.png" width="338px" />
 
 
 ### Vlastnosti
@@ -26,7 +28,7 @@ Jednoduchá utilita na **správne triedenie dát** podľa SK a CZ abecedy.
 
 **Príklad č. 1** je ukážkou jednoduchého zotriedenia rôznych písmen.
 
-**Príklad č. 2** umožňuje zotriediť zoznam filmov (vzostupne/zostupne).
+**Príklad č. 2** umožňuje zotriediť zoznam filmov *(vzostupne/zostupne)*.
 
 **Príklad č. 3** umožňuje zotriediť zoznam osôb v tabuľke, a to kliknutím na hlavičku konkrétnej položky. Triedenie záznamov je použité spolu **s knižnicou jQuery**.
 
