@@ -5,7 +5,7 @@ Triedenie dát podľa SK a CZ abecedy
 
 Jednoduchá utilita na **správne triedenie dát** podľa SK a CZ abecedy.
 
-> **Javascript** na triedenie textových reťazcov podľa slovenskej a českej abecedy *(včetne znakov **dz**, **dž** a **ch**)*.
+> **Javascript** na triedenie textových reťazcov podľa slovenskej a českej abecedy (včetne znakov **dz**, **dž** a **ch**).
 
 
 ### Obrázky
@@ -28,7 +28,7 @@ Jednoduchá utilita na **správne triedenie dát** podľa SK a CZ abecedy.
 
 **Príklad č. 2** umožňuje zotriediť zoznam filmov (vzostupne/zostupne).
 
-**Príklad č. 3** umožňuje zotriediť zoznam osôb v tabuľke, a to kliknutím na hlavičku konkrétnej položky. Triedenie záznamov je použité spolu *s knižnicou jQuery*.
+**Príklad č. 3** umožňuje zotriediť zoznam osôb v tabuľke, a to kliknutím na hlavičku konkrétnej položky. Triedenie záznamov je použité spolu **s knižnicou jQuery**.
 
 V súbore **sort_sk_cz.js** sa nachádza javascriptový algoritmus triedenia. Tento súbor je možné použiť v aplikáciách, zaoberajúcich sa triedením textov v **rôznych národných jazykoch**.
 
