@@ -1,0 +1,25 @@
+body {
+	margin: 80px 50px;
+	font-size: 11px;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+th { 
+	padding: 10px;
+	background-color: #555555;
+	color: #ffffff;
+}
+
+td { 
+	padding: 6px;
+	border: 1px #aaa solid;
+}
+
+.sort_char {
+	cursor: pointer;
+}
+
+.sort_char:hover {
+	color: aqua;
+}
+
