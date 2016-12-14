@@ -5,7 +5,7 @@ Sorting in Slovak and Czech Alphabet
 
 A simple utility to **properly sort the data** by SK and CZ alphabet.
 
-> **Javascript** sorting strings by Slovak and Czech alphabet *(including symbols **dz**, **dž** and **ch**)*.
+> **Javascript** sorting strings by Slovak and Czech alphabet (including symbols **dz**, **dž** and **ch**).
 
 
 ### Screenshots
