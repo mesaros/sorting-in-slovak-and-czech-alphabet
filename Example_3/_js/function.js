@@ -14,7 +14,7 @@ $(document).ready(function () {
 
 			if ($header.is('.sort_char')) {
 				$header.click(function () {
-					var way = 1;                          //  1 = ascending (vzostupne) A-Z
+					way = 1;                              //  1 = ascending (vzostupne) A-Z
 					if ($header.is('.way_asc')) way = -1; // -1 = descending (zostupne) Z-A
 
 					var rows = $table.find('tbody > tr').get();

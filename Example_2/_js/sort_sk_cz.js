@@ -61,10 +61,10 @@ var code_a, code_b;
 var size_a, size_b;
 
 function sort_SK_CZ(a, b) {
+	if (a === b) return 0;
+
 	var i = 0;
 	var j = 0;
-
-	if (a === b) return 0;
 
 	size_a = a.length;
 	size_b = b.length;
