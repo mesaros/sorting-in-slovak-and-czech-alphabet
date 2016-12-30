@@ -1,7 +1,7 @@
 /**
  * @package    Sort_SK_CZ JavaScript
- * @version    1.0.3
- * @date       Sun, 25 Dec 2016 20:44:07 +0100, Slovakia
+ * @version    1.0.4
+ * @date       Sun, 31 Dec 2016 00:46:12 +0100, Slovakia
  * @author     Robert Mesaros
  * @copyright  Copyright © 2016 Robert Mesaros, rmSOFT
  * @web        http://www.rmsoft.sk
