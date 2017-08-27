@@ -1,9 +1,9 @@
 /**
  * @package    Sort_SK_CZ JavaScript
- * @version    1.0.4
- * @date       Sun, 31 Dec 2016 00:46:12 +0100, Slovakia
+ * @version    1.0.5
+ * @date       Thu, 24 Aug 2017 22:45:23 +0100, Slovakia
  * @author     Robert Mesaros
- * @copyright  Copyright © 2016 Robert Mesaros, rmSOFT
+ * @copyright  Copyright © 2012-2017 Robert Mesaros, rmSOFT
  * @web        http://www.rmsoft.sk
  * @link       http://www.rmsoft.sk/en/portfolio/programming-work/web-services/data-sorting-in-slovak-and-czech-alphabet
  *
@@ -51,16 +51,15 @@ for (var key in token_sk_cz) {
 	keys_sk_cz.push(key);
 }
 
-var way = 1; // ascending (vzostupne) A-Z
-// var way = -1; // descending (zostupne) Z-A
-
 var char_a, char_b;
 var char_ma, char_mb;
 var move_a, move_b;
 var code_a, code_b;
 var size_a, size_b;
 
-function sort_SK_CZ(a, b) {
+function sort_SK_CZ(a, b, way) {
+	way = way || 1;     // (1) = default ascending (vzostupne) A-Z,    (-1) = default descending (zostupne) Z-A
+
 	if (a === b) return 0;
 
 	var i = 0;
@@ -98,7 +97,7 @@ function sort_SK_CZ(a, b) {
 
 		move_a = move_b = 0.2;
 
-		if (char_a === char_b && char_a !== undefined) {
+		if (char_a !== undefined && char_a === char_b) {
 			if (keys_sk_cz.indexOf(char_ma) > keys_sk_cz.indexOf(char_mb)) move_a *= 2;
 			if (keys_sk_cz.indexOf(char_ma) < keys_sk_cz.indexOf(char_mb)) move_b *= 2;
 		}
@@ -106,13 +105,13 @@ function sort_SK_CZ(a, b) {
 		code_a = (char_a) ? char_a.charCodeAt(0) + move_a : char_ma.charCodeAt(0);
 		code_b = (char_b) ? char_b.charCodeAt(0) + move_b : char_mb.charCodeAt(0);
 
-		if (code_a != code_b) break;
+		if (code_a !== code_b) break;
 		i++;
 		j++;
 	}
 
-	if (i == size_a) return -way;
-	if (j == size_b) return way;
+	if (i === size_a) return -way;
+	if (j === size_b) return way;
 
 	return code_a * way - code_b * way;
 }

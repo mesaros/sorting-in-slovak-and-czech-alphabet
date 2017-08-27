@@ -1,14 +1,14 @@
 Sorting in Slovak and Czech Alphabet
 ====================================
 
-### Description
+## Description
 
 A simple utility to **properly sort the data** by SK and CZ alphabet.
 
 > **Javascript** sorting strings by Slovak and Czech alphabet (including symbols **dz**, **dž** and **ch**).
 
 
-### Screenshots
+## Screenshots
 
 <img src="https://raw.githubusercontent.com/mesaros/sorting-in-slovak-and-czech-alphabet/master/screenshots/sorting-in-slovak-and-czech-alphabet-01.png" width="448px" />
 
@@ -17,14 +17,16 @@ A simple utility to **properly sort the data** by SK and CZ alphabet.
 <img src="https://raw.githubusercontent.com/mesaros/sorting-in-slovak-and-czech-alphabet/master/screenshots/sorting-in-slovak-and-czech-alphabet-03.png" width="338px" />
 
 
-### Properties
+## Properties
 
 - **properly sort** the data by SK and CZ alphabet
 - the possibility of using with **jQuery library**
 - without installation
 
+> **The algorithm is universal for various programming languages**.
 
-### Procedure
+
+## Procedure
 
 **Example no. 1** is a simple example of sorting different letters.
 
@@ -35,7 +37,7 @@ A simple utility to **properly sort the data** by SK and CZ alphabet.
 In file **sort_sk_cz.js** is JavaScript sorting algorithm. This file can be used in applications dealing with sorting of texts in **different national languages**.
 
 
-### Links
+## Links
 
 - more about this [Sorting in Slovak and Czech Alphabet][1]
 - website [rmSOFT][2]

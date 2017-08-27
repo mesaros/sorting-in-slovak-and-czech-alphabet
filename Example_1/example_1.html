@@ -3,6 +3,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 	<title>Sort SK-CZ - Example 1</title>
+
 	<script src="_js/sort_sk_cz.js" type="text/javascript"></script>
 </head>
 
@@ -12,7 +13,11 @@
 	<!--
 	var sArr = ["x", "č", "ch", "a", "Ľ", "c", "h", "ä", "Z", "dz", "a", "X", "ü", "ř", "e", "ž", "u", "ě", "ň", "Ä", "í", "á", "d", "š", "Dž", "Ě"];
 
-	sArr.sort(sort_SK_CZ);
+	var way = 1;      // (1) = default ascending (vzostupne) A-Z,    (-1) = default descending (zostupne) Z-A
+
+	sArr.sort(function (a, b) {
+		return sort_SK_CZ(a, b, way);
+	});
 
 	alert(sArr);
 	-->

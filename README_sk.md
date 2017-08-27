@@ -1,14 +1,14 @@
 Triedenie dát podľa SK a CZ abecedy
 ===================================
 
-### Popis
+## Popis
 
 Jednoduchá utilita na **správne triedenie dát** podľa SK a CZ abecedy.
 
 > **Javascript** na triedenie textových reťazcov podľa slovenskej a českej abecedy (včetne znakov **dz**, **dž** a **ch**).
 
 
-### Obrázky
+## Obrázky
 
 <img src="https://raw.githubusercontent.com/mesaros/sorting-in-slovak-and-czech-alphabet/master/screenshots/sorting-in-slovak-and-czech-alphabet-01.png" width="448px" />
 
@@ -17,14 +17,16 @@ Jednoduchá utilita na **správne triedenie dát** podľa SK a CZ abecedy.
 <img src="https://raw.githubusercontent.com/mesaros/sorting-in-slovak-and-czech-alphabet/master/screenshots/sorting-in-slovak-and-czech-alphabet-03.png" width="338px" />
 
 
-### Vlastnosti
+## Vlastnosti
 
 - **správne triedenie** dát podľa SK a CZ abecedy
 - možnosť použitia s knižnicou **jQuery**
 - bez inštalácie
 
+> **Algoritmus je univerzálny pre rôzne programovacie jazyky**.
 
-### Postup
+
+## Postup
 
 **Príklad č. 1** je ukážkou jednoduchého zotriedenia rôznych písmen.
 
@@ -35,7 +37,7 @@ Jednoduchá utilita na **správne triedenie dát** podľa SK a CZ abecedy.
 V súbore **sort_sk_cz.js** sa nachádza javascriptový algoritmus triedenia. Tento súbor je možné použiť v aplikáciách, zaoberajúcich sa triedením textov v **rôznych národných jazykoch**.
 
 
-### Linky
+## Linky
 
 - viac o [Triedenie dát podľa SK a CZ abecedy][1]
 - webstránka [rmSOFT][2]

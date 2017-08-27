@@ -55,8 +55,13 @@
 		"Čeľuste I"
 	];
 
+	var way = 1;      // (1) = default ascending (vzostupne) A-Z,    (-1) = default descending (zostupne) Z-A
+
 	function Zotriedit() {
-		sArr.sort(sort_SK_CZ);
+
+		sArr.sort(function (a, b) {
+			return sort_SK_CZ(a, b, way);
+		});
 
 		alert(sArr);
 
