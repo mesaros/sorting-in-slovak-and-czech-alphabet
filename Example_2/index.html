@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="Description"
+          content="Sort SK-CZ - Example 2"/>
+    <meta name="Keywords"
+          content="sort, slovak, czech, alphabet, triedenie, abeceda"/>
+    <meta name="Author" content="Robert Mesaros">
+    <meta name="Copyright" content="rmSOFT 2019">
+
+    <title>Sort SK-CZ - Example 2</title>
+
+    <script src="_js/alphabets.js" type="text/javascript"></script>
+    <script src="_js/sort_data.js" type="text/javascript"></script>
+
+    <script src="data/data_filmy.js" type="text/javascript"></script>
+    <script src="data/data_ascii.js" type="text/javascript"></script>
+    <script src="data/data_100000.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        <!--
+        let data = [];
+        let way = 1; // (way = 1) = ascending (vzostupne) A-Z [default],    (way = -1) = descending (zostupne) Z-A
+
+        function Zotriedit(asc_desc = 1) {
+            let text = "";
+
+            // form_data
+            if (document.form_data.data_array[0].checked) data = data_filmy;
+            if (document.form_data.data_array[1].checked) data = data_ascii;
+            if (document.form_data.data_array[2].checked) data = data_100000;
+
+            // form_alphabet
+            if (document.form_alphabet.data_alphabet[0].checked) objABC = objABC_sk_cz__0Aa;
+            if (document.form_alphabet.data_alphabet[1].checked) objABC = objABC_sk_cz__0aA;
+            if (document.form_alphabet.data_alphabet[2].checked) objABC = objABC_sk_cz__0A_a;
+            if (document.form_alphabet.data_alphabet[3].checked) objABC = objABC_sk_cz__0a_A;
+            if (document.form_alphabet.data_alphabet[4].checked) objABC = objABC_en__A_a;
+            if (document.form_alphabet.data_alphabet[5].checked) objABC = objABC__ASCII;
+
+            objABC.spec = document.form_alphabet.spec.checked;
+            objABC.upper_lower = document.form_alphabet.upper_lower.checked;
+
+            setupABC();
+
+            way = asc_desc;
+
+            data.sort(function (a, b) { return 0.5 - Math.random(); }); // sort random (zamiesanie dat)
+
+            let d_start = new Date();
+            document.getElementById("time_start").innerHTML = d_start.toLocaleDateString() + " " + d_start.toLocaleTimeString();
+
+            data.sort(function (a, b) {
+                return sortData(a, b, way);
+            });
+
+            let d_end = new Date();
+            document.getElementById("time_end").innerHTML = d_end.toLocaleDateString() + " " + d_end.toLocaleTimeString();
+
+            let cas = new Date(d_end - d_start);
+            document.getElementById("time").innerHTML = cas.getTime() + "&nbsp;&nbsp;&nbsp; [ v milisekundách ]";
+
+            for (let i = 0; i < data.length; i++) {
+                text += (i + 1) + "&nbsp;&nbsp;&nbsp;&nbsp;" + data[i].replace(/ /g, "&nbsp;") + "<br>";
+            }
+
+            document.getElementById("obsah").innerHTML = text;
+
+            if (way > 0) document.getElementById("way").innerHTML = "<b>---&nbsp;&nbsp; vzostupne &nbsp;&nbsp;---</b>";
+            else document.getElementById("way").innerHTML = "<b>---&nbsp;&nbsp; zostupne &nbsp;&nbsp;---</b>";
+        }
+        -->
+    </script>
+
+    <h1>Triedenie dát</h1>
+    <hr>
+    <h3>Voľba dát</h3>
+    <form name="form_data">
+        <label>
+            <input type="radio" name="data_array" value="data_filmy" checked> <b>Filmy</b><br>
+            <input type="radio" name="data_array" value="data_ascii"> <b>ASCII</b><br>
+            <input type="radio" name="data_array" value="data_100000"> <b>100 000 záznamov</b><br>
+        </label>
+    </form>
+
+    <hr>
+    <h3>Voľba spôsobu triedenia</h3>
+    <form name="form_alphabet">
+        <label>
+            <input type="radio" name="data_alphabet" value="ABC_01" checked> <b>Abeceda SK-CZ &nbsp;&nbsp;&nbsp;(medzera - číslice - veľké a malé znaky abecedy
+            striedavo)</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[space,0,1,2,3,4,5,6,7,8,9,A,a,Á,á,Ä,ä,B,b,C,c,Č,č,D,d,Ď,ď,Dz,dz,DZ,dZ,Dž,dž,DŽ,dŽ,E,e,É,é,Ě,ě,F,f,G,g,H,h,Ch,ch,CH,cH,I,i,Í,í,J,j,K,k,L,l,Ĺ,ĺ,Ľ,ľ,M,m,N,n,Ň,ň,O,o,Ó,ó,Ô,ô,Ö,ö,Ő,ő,P,p,Q,q,R,r,Ŕ,ŕ,Ř,ř,S,s,Š,š,T,t,Ť,ť,U,u,Ú,ú,Ů,ů,Ü,ü,Ű,ű,V,v,W,w,X,x,Y,y,Ý,ý,Z,z,Ž,ž]
+            <br>
+            <input type="radio" name="data_alphabet" value="ABC_02"> <b>Abeceda SK-CZ &nbsp;&nbsp;&nbsp;(medzera - číslice - malé a veľké znaky abecedy striedavo)</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[space,0,1,2,3,4,5,6,7,8,9,a,A,á,Á,ä,Ä,b,B,c,C,č,Č,d,D,ď,Ď,dz,Dz,dZ,DZ,dž,Dž,dŽ,DŽ,e,E,é,É,ě,Ě,f,F,g,G,h,H,ch,Ch,cH,CH,i,I,í,Í,j,J,k,K,l,L,ĺ,Ĺ,ľ,Ľ,m,M,n,N,ň,Ň,o,O,ó,Ó,ô,Ô,ö,Ö,ő,Ő,p,P,q,Q,r,R,ŕ,Ŕ,ř,Ř,s,S,š,Š,t,T,ť,Ť,u,U,ú,Ú,ů,Ů,ü,Ü,ű,Ű,v,V,w,W,x,X,y,Y,ý,Ý,z,Z,ž,Ž]
+            <br>
+            <input type="radio" name="data_alphabet" value="ABC_03"> <b>Abeceda SK-CZ &nbsp;&nbsp;&nbsp;(medzera - číslice - veľké znaky abecedy - malé znaky
+            abecedy)</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[space,0,1,2,3,4,5,6,7,8,9,A,Á,Ä,B,C,Č,D,Ď,Dz,DZ,Dž,DŽ,E,É,Ě,F,G,H,Ch,CH,I,Í,J,K,L,Ĺ,Ľ,M,N,Ň,O,Ó,Ô,Ö,Ő,P,Q,R,Ŕ,Ř,S,Š,T,Ť,U,Ú,Ů,Ü,Ű,V,W,X,Y,Ý,Z,Ž,a,á,ä,b,c,č,d,ď,dz,dZ,dž,dŽ,e,é,ě,f,g,h,ch,cH,i,í,j,k,l,ĺ,ľ,m,n,ň,o,ó,ô,ö,ő,p,q,r,ŕ,ř,s,š,t,ť,u,ú,ů,ü,ű,v,w,x,y,ý,z,ž]
+            <br>
+            <input type="radio" name="data_alphabet" value="ABC_04"> <b>Abeceda SK-CZ &nbsp;&nbsp;&nbsp;(medzera - číslice - malé znaky abecedy - veľké znaky
+            abecedy)</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[space,0,1,2,3,4,5,6,7,8,9,a,á,ä,b,c,č,d,ď,dz,dZ,dž,dŽ,e,é,ě,f,g,h,ch,cH,i,í,j,k,l,ĺ,ľ,m,n,ň,o,ó,ô,ö,ő,p,q,r,ŕ,ř,s,š,t,ť,u,ú,ů,ü,ű,v,w,x,y,ý,z,ž,A,Á,Ä,B,C,Č,D,Ď,Dz,DZ,Dž,DŽ,E,É,Ě,F,G,H,Ch,CH,I,Í,J,K,L,Ĺ,Ľ,M,N,Ň,O,Ó,Ô,Ö,Ő,P,Q,R,Ŕ,Ř,S,Š,T,Ť,U,Ú,Ů,Ü,Ű,V,W,X,Y,Ý,Z,Ž]
+            <br>
+            <input type="radio" name="data_alphabet" value="ABC_05"> <b>Abeceda EN &nbsp;&nbsp;&nbsp;(medzera - veľké znaky anglickej abecedy - malé znaky anglickej
+            abecedy)</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[space,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]
+            <br>
+            <input type="radio" name="data_alphabet" value="ABC_06"> <b>Abeceda EN &nbsp;&nbsp;&nbsp;(ASCII)</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[.. ASCII ..]
+            <br>
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="spec" value="spec" checked> Zahrnúť do triedenia špeciálne znaky (napr. dz, dž, ch)<br>
+        </label>
+        <label>
+            <input type="checkbox" name="upper_lower" value="upper_lower" checked> Rozlišovať veľké a malé písmena<br>
+        </label>
+    </form>
+
+    <hr>
+    <br><br>
+
+    <button onclick="Zotriedit(1);">Zotriediť dáta - vzostupne</button>
+    &nbsp;&nbsp;&nbsp;
+    <button onclick="Zotriedit(-1);">Zotriediť dáta - zostupne</button>
+
+    <br><br>
+
+    Štart: <span id="time_start"></span>
+    <br>
+    Koniec: <span id="time_end"></span>
+    <br><br>
+    Čas triedenia (nie výpisu na obrazovku!):&nbsp;&nbsp;&nbsp; <span id="time"></span>
+
+    <br><br>
+
+    <div id="way"></div>
+
+    <br><br>
+
+    <div id="obsah"></div>
+
+</body>
+</html>
