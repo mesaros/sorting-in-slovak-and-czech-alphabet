@@ -54,7 +54,7 @@ national languages**.
 
 
 [1]: http://www.rmsoft.sk/en/portfolio/programming-work/web-services/data-sorting-in-slovak-and-czech-alphabet
-[2]: http://www.rmsoft.sk
+[2]: http://www.rmsoft.sk/en
 [3]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BB4D8Y28YZDH6 "Thanks for support"
 [4]: http://en.wikipedia.org/wiki/Slovak_orthography
 [5]: http://en.wikipedia.org/wiki/Czech_orthography
